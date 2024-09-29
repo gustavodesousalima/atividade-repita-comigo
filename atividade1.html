@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo
+valor informado for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para
+o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve
+imprimir o resultado da divisão do primeiro valor lido pelo segundo valor. -->
+    
+</body>
+
+<script>
+    let valor1 = parseFloat(prompt("Digite o primeiro valor:"))
+    let valor2 = parseFloat(prompt("Digite o segundo valor:"))
+
+    while(valor2 <= 0){
+        valor2 = parseFloat(prompt("Digite o segundo valor:"))
+    }
+
+    let resultado = valor1 / valor2
+
+    window.alert(`${resultado}`)
+</script>
+</html>
